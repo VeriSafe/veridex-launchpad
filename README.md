@@ -1,31 +1,34 @@
 # Veridex
 
 [![Chat with us on Discord](https://img.shields.io/badge/chat-Discord-blueViolet.svg)](https://discord.gg/JqheZms)
-[![CircleCI](https://circleci.com/gh/0xProject/0x-launch-kit-frontend.svg?style=svg)](https://circleci.com/gh/0xProject/0x-launch-kit-frontend)
-[![dependencies Status](https://david-dm.org/verisafe/veridex/status.svg)](https://david-dm.org/verisafe/veridex)
-[![devDependencies Status](https://david-dm.org/verisafe/veridex/dev-status.svg)](https://david-dm.org/verisafe/veridex?type=dev)
-[![Coverage Status](https://coveralls.io/repos/github/VeriSafe/VeriDex/badge.svg?branch=development)](https://coveralls.io/github/VeriSafe/VeriDex?branch=development)
+[![CircleCI](https://circleci.com/gh/VeriSafe/veridex-launchpad.svg?style=svg)](https://circleci.com/gh/VeriSafe/veridex-launchpad)
+[![dependencies Status](https://david-dm.org/verisafe/veridex-launchpad/status.svg)](https://david-dm.org/verisafe/veridex-launchpad)
+[![devDependencies Status](https://david-dm.org/verisafe/veridex-launchpadveridex-launchpad/dev-status.svg)](https://david-dm.org/verisafe/veridex-launchpad?type=dev)
+[![Coverage Status](https://coveralls.io/repos/github/VeriSafe/veridex-launchpad/badge.svg?branch=development)](https://coveralls.io/github/VeriSafe/veridex-launchpad?branch=development)
 
-This project is forked from [0x-launch-kit-fronted](https://github/0xproject/0x-launch-kit-frontend) and it have a goal to be the most complete open-source 0x based dex out there. The code here will try to be on sync with the 0x frontend, but with the additional features proposed on the TODO, tests will be include following 0x style.
+_WORK IN PROGRESS_
 
-This source code is used on the [VeriSafe Dex as a service](https://steemit.com/zerox/@joaocampos/veridex-network-dex-as-a-service).
+This project derives from VeriDex and it has a goal to be Launchpad to do decentralized initial offers. The code here will try to be on sync with the VeriDex on the common parts, but with the additional features proposed on the TODO and required by launchpad, tests will be include following 0x style.
 
-This repo ships with both an ERC-20 token trading interface and an ERC-721 marketplace interface. However, for now, only improvements on ERC-20 token trading will be done.
+This source code will be used to offer decentralized exchange offers by VeriSafe.
 
-Support this fork with the following actions:
+This repo ships with an ERC20 trading interface simplified to do decentralized offers with the proposed features:
 
--   Add VSF, 0xbitcoin and 0x as pairs
--   Lets us know you are using this fork
+-   Simple buy button for traders with ETH
+-   Admin interface for issuer address's
+-   Transparently show all the trades
+
+Support this project with the following actions:
+
+-   Add VSF as a pair
+-   Lets us know you are using this project
 -   Add a Powered by 0x and VeriSafe
 
 With your help, we can be self-sustainable and complete the long list of TODO's. If you want a feature that is not present on the TODO list, please open an issue requesting a feature request.
 
-## Deployed DEX's
+## Deployed Launchpads
 
-List of deployed dex's using this source code:
-
--   [VeriDex](https://dex.verisafe.io)
--   [0xChange](https://0xchange.verisafe.io)
+List of deployed launchpads using this source code:
 
 If you are using the source code of this fork, please let me know! Help the project adding VSF as a pair on your fork!
 
@@ -34,30 +37,36 @@ If you are using the source code of this fork, please let me know! Help the proj
 Clone this repository and install its dependencies:
 
 ```
-git clone git@github.com:VeriSafe/veridex.git
-cd Veridex
+git clone git@github.com:VeriSafe/veridex-launchpad.git
+cd veridex-launchpad
 yarn
 ```
 
 ## TODO
 
-This is a detailed list of planned features to add to this DEX (includes VeriDex backend) on long term:
+This is a detailed list of planned features to add to this Launchpad (includes VeriDex backend) on long term:
 
--   [x] List Dex Trades
+-   [x] List IEO Trades
 -   [x] Add troll box using ChatBro
 -   [x] Fully configuration of orderbook and sell and buy cards
--   [x] Support multiple wallets, like Portis, Torus etc please see list of planned wallets below
+-   [x] Support multiple wallets, like Portis, Torus, etc please see list of planned wallets below
 -   [x] Add mobile support
 -   [x] Support to transfer tokens
+-   [x] List descriptions for each ieo
+-   [ ] Admin interface for the issuer address's
+-   [ ] KYC verification of buyers if requested by project
+-   [ ] Limit trades to allowed countries for each pair according to KYC
+-   [ ] Force KYC onChain using a customized 0x Forwarder smart contract that will use KYC smart contracts
+        to validate issuers and buyers
 -   [ ] List Market Trades
 -   [ ] List Markets stats
--   [ ] Click on buy and sell button to auto-fill
+-   [ ] Click on buy to auto-fill
 -   [ ] Adding graphs like Trading View
--   [ ] Create a costumized front page
--   [x] List descriptions for each project
+-   [ ] Create a customized front page
 -   [ ] Report data to the most known crypto data aggregators
 -   [ ] List last prices for each token
 -   [ ] Theme switcher
+-   [ ] List IEO details on the front page - Main funding goal, project details, current funding
 
 ## Planned Wallets Support
 

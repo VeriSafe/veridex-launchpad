@@ -1,6 +1,6 @@
 {
-    "name": "veridex",
-    "version": "0.1.0",
+    "name": "veridex-launchpad",
+    "version": "0.0.1",
     "private": true,
     "dependencies": {
         "0x.js": "^6.0.11",
